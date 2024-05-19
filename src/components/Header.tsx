@@ -1,10 +1,13 @@
-import { useCurrencyExchangeStore } from "../store"
+import Form from "./Form"
 
 const Header = () => {
-  const { fetchCurrency } = useCurrencyExchangeStore()
-  fetchCurrency()
+  
+  
   return (
-    <div className="text-xl">Header</div>
+    <>
+      <div className="font-bold  text-5xl text-center mx-auto">Currency Exchange Rate</div>
+      <Form/>
+    </>
   )
 }
 
