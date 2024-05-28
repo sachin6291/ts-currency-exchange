@@ -1,11 +1,15 @@
 // import { useState } from 'react'
 
-// // type ExchangeCurrencyProp ={
-// //     label:string
-// //     arrayCurrency:Array
-// // }
+// type ExchangeCurrencyProp ={
+//     label:string
+//     arrayCurrency:{
+//         id: string
+//         name: string
+//         symbol: string
+//     }[]
+// }
 
-// const useExangeCurrency = (label, arrayCurrency) => {
+// const useExangeCurrency = ({label, arrayCurrency}:ExchangeCurrencyProp) => {
 
 //     const[state, setState] = useState("")
 

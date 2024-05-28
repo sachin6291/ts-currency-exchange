@@ -11,6 +11,8 @@ export const useCurrencyExchangeStore = create<CurrencyExchangeStore>()(devtools
     currencyCode: [] as CurrencyCode[],
     fetchCurrency: async ()=>{
         const currencyCode = await getCurrencyCode()
-        set(()=>({currencyCode})); 
+        if(currencyCode?.length !== 0 ){
+            set(()=>({currencyCode})); 
+        }
     }
 })))
